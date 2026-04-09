@@ -25,7 +25,7 @@ def run_scraper(max_pages=10, progress_bar=None, status_text=None):
     driver = webdriver.Chrome(service=service, options=chrome_options)
     
     job_data = []
-    base_url = "https://next.rikunabi.com/job_search/area-tokyo/oc-engineering/"
+    base_url = "https://next.rikunabi.com/job_search/area-tokyo/oc-engineering/?nw=true"
     
     try:
         for page in range(1, max_pages + 1):
